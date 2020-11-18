@@ -1,15 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import './App.css';
-import { Route } from 'react-router-dom';
+import React from 'react';
 
-import { Home, Test } from './inc';
-const URL = 'http://localhost:4000';
+import { Header } from './pages';
 
 const App = () => {
 	return (
-		<div className='App'>
-			<Route path='/' component={Home} exact />
-			<Route path='/test' component={Test} />
+		<div>
+			<Header />
 		</div>
 	);
 };
