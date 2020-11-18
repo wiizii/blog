@@ -1,25 +1,17 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import { Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { Home, Test } from './inc';
+const URL = 'http://localhost:4000';
+
+const App = () => {
+	return (
+		<div className='App'>
+			<Route path='/' component={Home} exact />
+			<Route path='/test' component={Test} />
+		</div>
+	);
+};
 
 export default App;
