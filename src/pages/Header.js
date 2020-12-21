@@ -1,72 +1,44 @@
-import React, { useState } from 'react';
-import { Route, Link } from 'react-router-dom';
-import '../App.css';
-import Modal from 'react-awesome-modal';
+import React from "react";
+import { Route, Link } from "react-router-dom";
+import logo from "../assets/images/logo.png";
+import circle from "../assets/images/circle.png";
+import "../App.css";
 
 const Header = () => {
-	const [visible, setVisible] = useState(false);
-	const [ID, setID] = useState('');
-	const [PW, setPW] = useState('');
-
-	const _openModal = () => {
-		setVisible(true);
-	};
-
-	const _closeModal = () => {
-		setVisible(false);
-	};
-
-	const _changeID = () => {
-		const id = document.getElementsByName('id')[0].value;
-		setID(id);
-	};
-
-	const _changePW = () => {
-		const pw = document.getElementsByName('password')[0].value;
-		setPW(pw);
-	};
-
-	return (
-		<div class='header_grid'>
-			<div></div>
-			<div className='acenter'>
-				<Route path='/' />
-				<Link className='link_tit' to='/'>
-					<h3>WIZI Blog</h3>
-				</Link>
-			</div>
-			<div className='acenter'>
-				<h5 onClick={() => _openModal()}> 관리자 로그인 </h5>
-				<Modal visible={visible} width='400' height='300' effect='fadeInDown' onClickAway={() => _closeModal()}>
-					<div>
-						<h4 className='acenter login_tit'> 관리자 로그인 </h4>
-						<form>
-							<div class Name='login_div'>
-								<div className='login_input_div'>
-									<p> 관리자 ID </p>
-									<input type='text' name='id' onChange={() => _changeID()} />
-								</div>
-
-								<div className='login_input_div' style={{ marginTop: '40px' }}>
-									<p> 관리자 Password </p>
-									<input type='text' name='password' onChange={() => _changePW()} />
-								</div>
-
-								<div className='submit_div'>
-									<div>
-										<input type='button' value='로그인' />
-									</div>
-									<div>
-										<input type='button' value='취소' onClick={() => _closeModal()} />
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-				</Modal>
-			</div>
-		</div>
-	);
+  return (
+    <div className="header">
+      <div className="logo_container">
+        <div className="logo">
+          <img src={logo} width="200" height="200" alt="logo" />
+        </div>
+        <div className="circle">
+          <img
+            className="rotate_img"
+            src={circle}
+            width="200"
+            height="200"
+            alt="circle"
+          />
+        </div>
+        <section className="header_box">
+          <div className="authContainer">
+            <span className="subTitle">Let's make something awesome!</span>
+            <br />
+            <span className="author">SUPPORTED BY BTT</span>
+          </div>
+        </section>
+      </div>
+      <div>
+        <Route path="/" />
+        <Link className="link_tit" to="/">
+          <h3>
+            <br />
+            WIZI Blog
+          </h3>
+        </Link>
+      </div>
+    </div>
+  );
 };
 
 export default Header;
