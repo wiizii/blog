@@ -1,5 +1,4 @@
 import React from "react";
-import { Route, Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 import circle from "../assets/images/circle.png";
 import "../App.css";
@@ -21,21 +20,12 @@ const Header = () => {
           />
         </div>
         <section className="header_box">
-          <div className="authContainer">
+          <div className="auth_container">
             <span className="subTitle">Let's make something awesome!</span>
             <br />
             <span className="author">SUPPORTED BY BTT</span>
           </div>
         </section>
-      </div>
-      <div>
-        <Route path="/" />
-        <Link className="link_tit" to="/">
-          <h3>
-            <br />
-            WIZI Blog
-          </h3>
-        </Link>
       </div>
     </div>
   );

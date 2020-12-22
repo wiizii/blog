@@ -1,9 +1,20 @@
+.main_container {
+  background-color: white;
+  font-family: "Anton", sans-serif;
+}
 .header {
   display: block;
-  border-bottom: solid 1px #ababab;
   height: 30%;
   text-align: center;
-  font-family: "Anton", sans-serif;
+}
+.body {
+  display: block;
+  text-align: center;
+}
+.footer {
+  display: block;
+  text-align: center;
+  border-top: dotted 3px #ababab;
 }
 .logo_container {
   padding-top: 30px;
@@ -29,7 +40,7 @@ circle {
     transform: rotate(360deg);
   }
 }
-.authContainer {
+.auth_container {
   position: absolute;
   left: 30%;
   right: 30%;
@@ -39,6 +50,7 @@ circle {
 .subTitle {
   font-weight: 600;
   font-size: 20px;
+  opacity: 90%;
 }
 .author {
   font-weight: 600;
@@ -49,5 +61,14 @@ circle {
   padding-top: 5px;
   color: black;
   text-decoration: none;
-  z-index: 1;
+}
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+.banner_container {
+  padding-bottom: 15px;
+  border-bottom: dotted 3px #ababab;
+}
+.banner {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  opacity: 70%;
 }
