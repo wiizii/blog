@@ -5,14 +5,18 @@ const Body = () => {
   return (
     <div className="body">
       <div className="banner_container">
-        <br />
-        <br />
         <Route path="/" />
         <Link className="link_tit" to="/">
           <span className="banner">Portfolio</span>
         </Link>
       </div>
-      <div>content</div>
+      <div className="category">
+        <span className="tag">ALL</span>
+        <span className="tag">MODEL</span>
+        <span className="tag">DESIGN</span>
+        <span className="tag">CANVAS</span>
+        <span className="tag">ABOUT</span>
+      </div>
     </div>
   );
 };

@@ -1,6 +1,11 @@
 .main_container {
   background-color: white;
   font-family: "Anton", sans-serif;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 .header {
   display: block;
@@ -32,7 +37,7 @@ circle {
   z-index: -1;
 }
 .rotate_img {
-  animation: rotate 10s linear infinite;
+  animation: rotate 20s linear infinite;
   transform-origin: 50% 50%;
 }
 @keyframes rotate {
@@ -64,11 +69,22 @@ circle {
 }
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
 .banner_container {
-  padding-bottom: 15px;
-  border-bottom: dotted 3px #ababab;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 .banner {
   font-family: "Dancing Script", cursive;
   font-size: 40px;
   color: #333333;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+.tag {
+  padding-right: 20px;
+  padding-left: 20px;
 }
