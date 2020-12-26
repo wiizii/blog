@@ -50,7 +50,7 @@ circle {
 .subTitle {
   font-weight: 600;
   font-size: 20px;
-  opacity: 90%;
+  color: #333333;
 }
 .author {
   font-weight: 600;
@@ -70,5 +70,5 @@ circle {
 .banner {
   font-family: "Dancing Script", cursive;
   font-size: 40px;
-  opacity: 70%;
+  color: #333333;
 }
