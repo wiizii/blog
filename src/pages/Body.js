@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Link } from "react-router-dom";
+import Dummy from "./Dummy";
 
 const Body = () => {
   return (
@@ -17,6 +18,7 @@ const Body = () => {
         <span className="tag">CANVAS</span>
         <span className="tag">ABOUT</span>
       </div>
+      <Dummy />
     </div>
   );
 };
