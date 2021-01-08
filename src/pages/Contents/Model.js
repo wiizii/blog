@@ -1,5 +1,5 @@
 const Model = () => {
-	return <div>Model</div>;
+	return <div className="board_container">Model</div>;
 };
 
 export default Model;

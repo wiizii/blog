@@ -1,5 +1,5 @@
 const Canvas = () => {
-	return <div>Canvas</div>;
+	return <div className="board_container">Canvas</div>;
 };
 
 export default Canvas;

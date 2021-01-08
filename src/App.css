@@ -85,13 +85,13 @@
 .tag {
 	padding-right: 20px;
 	padding-left: 20px;
+	padding-bottom: 5%;
 }
 
 .grid_container{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	column-gap: 4px;
-	padding-top: 5%;
 	margin-left: 120px;
 	margin-right: 120px;
 	grid-auto-flow: dense;
@@ -100,4 +100,10 @@
 .dummy_image{
 	width: 100%; height:auto;
 	border-radius: 5px;
+}
+
+.board_container{
+	margin-left: 15%;
+	margin-right: 15%;
+	background-color: red;
 }
