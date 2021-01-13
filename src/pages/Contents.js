@@ -4,6 +4,7 @@ import Design from './Contents/Design';
 import Canvas from './Contents/Canvas';
 import About from './Contents/About';
 
+
 const Contents = (props) => {
 	switch (props.view) {
 		case 'ALL':
