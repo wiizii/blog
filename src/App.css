@@ -79,6 +79,7 @@
 	font-weight: 500;
 }
 .tag {
+	cursor:pointer;
 	padding-right: 20px;
 	padding-left: 20px;
 	padding-bottom: 5%;
@@ -123,7 +124,3 @@
 	color: rgb(51, 51, 51);
 	font-size: 14px;
 }
-
-a:link {
-}
-
