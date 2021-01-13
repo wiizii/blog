@@ -10,7 +10,7 @@ const Body = () => {
 	const [view, setView] = useState('ALL');
 	const [weight, setWeight] = useState([1,0,0,0,0]);
 	return (
-		<div className='body'>
+		<div id='body'>
 			<div className='banner_container'>
 				<Route path='/' />
 				<Link className='link_tit' to='/'>

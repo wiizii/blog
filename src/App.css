@@ -6,14 +6,15 @@
 	-webkit-user-select: none;
 	user-select: none;
 }
-.header {
+#header {
 	display: block;
 	height: 30%;
 	text-align: center;
 }
-.body {
+#body {
 	display: block;
 	text-align: center;
+	padding-bottom: 10%;
 }
 
 .logo_container {
@@ -100,7 +101,7 @@
 	border-radius: 5px;
 }
 
-.footer {
+#footer {
 	display: flex;
 	justify-content: space-around;
 	background-color: #ebebeb;

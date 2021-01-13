@@ -3,7 +3,7 @@ import github_logo from '../assets/images/GitHub-Mark-64px.png';
 
 const Footer = () => {
 	return (
-		<div className='footer'>
+		<div id='footer'>
 			<div className='get_in_touch'>
 				<h4>GET IN TOUCH</h4>
 				<a className='mail' href='mailto:119wjw@gmail.com'>

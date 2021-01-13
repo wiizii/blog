@@ -5,7 +5,7 @@ import '../App.css';
 
 const Header = () => {
 	return (
-		<div className='header'>
+		<div id='header'>
 			<div className='logo_container'>
 				<div className='rotate_img'>
 					<img className='rotate_gear' src={gear} width='120' height='120' alt='gear' />
