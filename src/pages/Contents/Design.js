@@ -1,5 +1,18 @@
+import DUMMY from '../../assets/dummy';
+
+const itemsToRender = [];
+for (let x in DUMMY) {
+	if((x.charAt(x.length-1)*1)&1){
+	itemsToRender.push(
+		<div key={x} className='image_container'>
+			<img src={DUMMY[x]} alt='dummy' className='dummy_image'></img>
+		</div>
+	);
+	}
+}
+
 const Design = () => {
-	return <div className="board_container">Design</div>;
+	return <div className="grid_container">{itemsToRender}</div>;
 };
 
 export default Design;
