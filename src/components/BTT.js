@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Container = styled.h1`
 	position: relative;
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: calc(10px + 5vw);
+	font-size: 40px;
 	font-weight: 700;
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
