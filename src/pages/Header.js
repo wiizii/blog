@@ -1,7 +1,6 @@
 import React from 'react';
 import gear from '../assets/images/gear.png';
 import gear_small from '../assets/images/gear_small.png';
-import '../App.css';
 
 const Header = () => {
 	return (
