@@ -1,24 +1,13 @@
-import Dummy from './Contents/Dummy';
-import Game from './Contents/Game';
-import Design from './Contents/Design';
-import Canvas from './Contents/Canvas';
-import About from './Contents/About';
+import React from 'react';
+import Categories from '../components/Categories';
 
-const Contents = (props) => {
-	switch (props.view) {
-		case 'ALL':
-			return <Dummy />;
-		case 'Game':
-			return <Game />;
-		case 'Design':
-			return <Design />;
-		case 'CANVAS':
-			return <Canvas />;
-		case 'ABOUT':
-			return <About />;
-		default:
-			return <div>Not Ready :)</div>;
-	}
+const Contents = ({ match }) => {
+	const category = match.params.category || 'ALL';
+	return (
+		<>
+			<Categories />
+		</>
+	);
 };
 
 export default Contents;

@@ -1,8 +1,10 @@
 import React, { useState, useCallback } from 'react';
+import { Route } from 'react-router-dom';
 import styled from 'styled-components';
 import Gear from './components/Gear';
 import BTT from './components/BTT';
-import Categories from './components/Categories';
+import Contents from './pages/Contents';
+//import Categories from './components/Categories';
 
 const Container = styled.div`
 	background-color: white;
@@ -23,18 +25,13 @@ const Main = styled.div`
 	}
 `;
 
-const Contents = styled.div``;
-
 const App = () => {
-	const [category, setCategory] = useState('ALL');
-	const onSelect = useCallback((category) => setCategory(category), []);
-
 	return (
 		<Container>
 			<Main>
 				<Gear />
 				<BTT />
-				<Categories category={category} onSelect={onSelect} />
+				<Route path='/:category?' component={Contents} />
 			</Main>
 		</Container>
 	);
