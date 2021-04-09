@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Container = styled.h1`
 	position: relative;
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 40px;
+	font-size: 20px;
 	font-weight: 700;
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
@@ -13,7 +13,15 @@ const Container = styled.h1`
 `;
 
 const BTT = () => {
-	return <Container>BTT</Container>;
+	return (
+		<Container>
+			홍익대학교
+			<br />
+			B611123
+			<br />
+			위지원
+		</Container>
+	);
 };
 
 export default BTT;
