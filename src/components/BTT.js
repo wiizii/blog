@@ -7,9 +7,9 @@ const Container = styled.h1`
 	font-weight: 700;
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
-	text-shadow: 0 0 0.2em red;
+	/* text-shadow: 0 0 0.2em red; */
 	white-space: nowrap;
-	filter: blur(0.001em);
+	/* filter: blur(0.001em); */
 `;
 
 const BTT = () => {
